@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ShortProject</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="icon.png" type="image/icon">
+		<style>
+			main{
+				
+				height:700px;
+				width:100%;
+				background-image:url("main2.jpg");
+				background-repeat:no-repeat;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				background-size: cover;
+				-o-background-size: cover;
+			}
+			.text1{
+				position: absolute;
+				top: 75%;
+				left: 40%;
+				transform: translate(-50%, -50%);
+				color:black;
+				font-family:Courier New;
+				font-size:20px;
+				text-shadow:0 0 10px #00b3ff,
+							0 0 40px #00b3ff,
+							0 0 80px #00b3ff,
+							0 0 120px #00b3ff,
+							0 0 200px #00b3ff,
+							0 0 300px #00b3ff,
+							0 0 400px #00b3ff;
+			}
+			.header{
+				border-radius:0px;
+				box-shadow:2px 2px 2px black;
+				background:linear-gradient(to left,deepskyblue,white,white,white,deepskyblue);
+			}
+			nav{
+				border-radius:0px;
+				width:100%;
+				height:100px;
+				box-shadow:2px 2px 2px black;
+				background:linear-gradient(to left,deepskyblue,white,white,white,deepskyblue);
+			}
+			nav button:hover{
+				background-color:green;
+			}
+			.home{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 27%;
+				left: 20%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#ahome{
+				text-decoration:none;
+				color:black;
+			}
+			.services{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 27%;
+				left: 36%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#aser{
+				text-decoration:none;
+				color:black;
+			}
+			.gallery{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 27%;
+				left: 53%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#agal{
+				text-decoration:none;
+				color:black;
+			}
+			.contactus{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 27%;
+				left: 70%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#acon{
+				text-decoration:none;
+				color:black;
+			}
+			.moto{
+				color:black;
+				padding:0px;
+				border-radius:30px;
+				margin-top:10px;
+				margin-bottom:50px;
+				background:none;
+				font-family:Courier New;
+				opacity:0.8;
+			}
+			.aboutus{
+				color:black;
+				padding:0px;
+				border-radius:30px;
+				margin-top:10px;
+				margin-bottom:50px;
+				background:none;
+				font-family:Courier New;
+				opacity:0.8;
+			}
+			.sticky {
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+
+			.sticky + .content {
+				padding-top: 60px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<main class="content">
+		<div class="text1">
+		<h1>WE PLAN AND DELIVER EVENT SERVICES</h1>
+		</div>
+		<header class="header" id="logo">
+			<center><img src="evenzone.png" width=200 height="130"/></center>
+		</header>
+		
+		<nav id="navbar">
+			<form name="form">
+			<button class="home"><a href="" id="ahome">Home</a></button>
+			<button class="services"><a href="services.html" id="aser">Services</a></button>
+ 			<button class="gallery"><a href="gallery.html" id="agal">Gallery</a></button>
+			<button class="contactus"><a href="contactus.html" id="acon">Contact us</a></button>
+		</nav>
+		</form>
+		</main>
+		<section>
+			<hr>
+			<h1 align="left" style="font-family:Brush Script MT;font-size:40px;color:darkcyan;text-shadow:1px 1px 1px yellow;">Our Motto</h1>
+			<div class="moto"> <h1>
+				To meet your expectations
+				Our process of understanding your objectives and building the event step by step from there helps us provide for any requirement you may have.
+				Our end-to-end event services portfolio is updated constantly to match global standards and deliver fresh and engaging experiences for clients and attendees alike.
+			</div></h1>
+			<hr>
+		</section>
+		<section>
+			<h1 align="left" style="font-family:Brush Script MT;font-size:40px;color:darkcyan;text-shadow:1px 1px 1px yellow;">About Us</h1>
+			<h1 class="aboutus">
+				Established in 2020,where our we precisely stick on our motto and always strive to achieve higher grades by providing quality service with our eminent staff that we are presiding with us.
+			</h1><hr>
+		</section>
+		<footer>
+			
+			<h3 align="center">&copy; Copyrights reserved 2020.</h3>
+		</footer>
+		<script>
+			window.onscroll = function() {scrollFunction()};
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+			function scrollFunction() {
+				if (window.pageYOffset >= sticky) {
+						navbar.classList.add("sticky")
+				}
+				else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+	</body>
+</html>

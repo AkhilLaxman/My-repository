@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="icon.png" type="image/icon">
+		<style>
+			button{
+				float:left;
+				display:block;
+			}
+			nav{
+				top:28px;
+				position:relative;
+			}
+			nav button:hover{
+				background-color:green;
+			}
+			nav select:hover{
+				background-color:green;
+			}
+			.home{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top:5%;
+				left: 24%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+				float:left;
+				display:block;
+			}
+			#ahome{
+				text-decoration:none;
+				color:black;
+			}
+			.services{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 5%;
+				left: 40%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#aser{
+				text-decoration:none;
+				color:black;
+			}
+			.gallery{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 5%;
+				left: 57%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#agal{
+				text-decoration:none;
+				color:black;
+			}
+			.contactus{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 5%;
+				left: 75%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#acon{
+				text-decoration:none;
+				color:black;
+			}
+			.logo{
+				position:absolute;
+				margin-top:15px;
+				margin-left:10px;
+			}
+			.h1{
+				text-shadow:0 0 10px #00b3ff,
+							0 0 40px #00b3ff,
+							0 0 80px #00b3ff,
+							0 0 120px #00b3ff,
+							0 0 200px #00b3ff,
+							0 0 300px #00b3ff,
+							0 0 400px #00b3ff;
+			}
+			.add{
+				opacity:0.8;
+			}
+			input[type=text] {
+				width: 100%;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 16px;
+				background-color: white;
+				background-position: 10px 10px; 
+				background-repeat: no-repeat;
+				padding: 12px 20px 12px 40px;
+			}
+			input[type=text]:focus {
+				width: 100%;
+			}
+			.userdetails{
+				margin: auto;
+				width: 40%;
+				height:350px;
+				border:  white 8px groove;
+				padding:20px;
+				background-color:black;
+				color:white;
+			}
+			.submitbut{
+				width:80px;
+				height:30px;
+				font-size:20px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="logo">
+	<img src="logo.png">
+	</div>
+	<nav>
+		<button class="home"><a href="home.html" id="ahome">Home</a></button>
+		<button class="services"><a href="services.html" id="aser">Services</a></button>
+		<button class="gallery"><a href="gallery.html" id="agal">Gallery</a></button>
+		<button class="contactus"><a href="" id="acon">Contact us</a></button><br><br><br><br><br><br>
+	</nav><hr>
+	<section>
+		<div>
+			<h1 align="center" class="h1">Contact us</h1>
+			<h1 align="center" class="add">Flat no:321/A <br>Sri Sai krishna nagar<br>Khammam,507003<br>Ph:983748787<br>Mailus at:evenzone2020@gmail.com</h1>
+		</div><br><br>
+	</section>
+	
+	<section class="userdetails">
+		<h1 align="center" style="font-family:cursive;color:">Connect With Us</h1>
+		<form name="details">
+			<b><label>Name<b>
+			<input type="text"  id="name" placeholder="Enter name"/><br><br>
+			<label>Phone Number<input type="text" id="number" placeholder="Phone Number"/><br><br>
+			<label>Email<input type="text" id="mail" placeholder="example@mail.com" /></label><br><br>
+			<center><input type="submit" value="Submit" class="submitbut" onclick="validate();"/></center>
+		</form>
+	</section>
+	<script>
+		function validate(){
+			if(document.details.name.value=="")
+				alert("Please enter name!");
+			if(document.details.number.value=="")
+				alert("Please enter phone number!");
+			var str=document.details.mail.value;
+			regEx=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			if(str.match(regEx)){	
+				alert('Your Email is valid');
+			}
+			else{
+				alert('Invalid email id\nTry again!');
+			}
+		}
+	</script>
+	</body>
+</html>

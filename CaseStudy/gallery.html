@@ -1,0 +1,188 @@
+<html>
+  <head>
+  <link rel="icon" href="icon.png" type="image/icon">
+	<style>
+			button{
+				float:left;
+				display:block;
+			}
+			nav{
+				top:28px;
+				position:relative;
+			}
+			nav button:hover{
+				background-color:green;
+			}
+			nav select:hover{
+				background-color:green;
+			}
+			.home{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top:5%;
+				left: 24%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+				float:left;
+				display:block;
+			}
+			#ahome{
+				text-decoration:none;
+				color:black;
+			}
+			.services{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 5%;
+				left: 40%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#aser{
+				text-decoration:none;
+				color:black;
+			}
+			.gallery{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 5%;
+				left: 57%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#agal{
+				text-decoration:none;
+				color:black;
+			}
+			.contactus{
+				background-color:transparent;
+				opacity:0.8;
+				border:2px solid green;
+				width:120px;
+				height:35px;
+				position: absolute;
+				top: 5%;
+				left: 75%;
+				font-size:15px;
+				font-family:Arial Black;
+				box-shadow:1px 1px 1px 1px #2d2426;
+			}
+			#acon{
+				text-decoration:none;
+				color:black;
+			}
+			.logo{
+				position:absolute;
+				margin-top:15px;
+				margin-left:10px;
+			}
+			.row1{
+				display:flex;
+			}
+			.row2{
+				display:flex;
+			}
+			.column{
+				text-align:center;
+			}
+			.images{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+				
+			}
+			.bimages{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+				
+			}
+			.img1:hover{
+				transform:scale(0.9);
+			}
+			.img2:hover{
+				transform:scale(0.9);
+			}
+			.img3:hover{
+				transform:scale(0.9);
+			}
+			.img4:hover{
+				transform:scale(0.9);
+			}
+			.h1{
+				background-color:black;
+				color:white;
+				border-radius:30px;
+				text-shadow:0 0 10px #00b3ff,
+							0 0 40px #00b3ff,
+							0 0 80px #00b3ff,
+							0 0 120px #00b3ff,
+							0 0 200px #00b3ff,
+							0 0 300px #00b3ff,
+							0 0 400px #00b3ff;
+				
+			}
+			
+	</style>
+  </head>
+  <body>
+	<div class="logo">
+	<img src="logo.png">
+	</div>
+	<nav>
+		<button class="home"><a href="home.html" id="ahome">Home</a></button>
+		<button class="services"><a href="services.html" id="aser">Services</a></button>
+		<button class="gallery"><a href="" id="agal">Gallery</a></button>
+		<button class="contactus"><a href="contactus.html" id="acon">Contact us</a></button><br><br><br><br><br><br>
+	</nav><hr>
+	<h1 align="center" class="h1">WEDDINGS BY US</h1>
+	<section class="images">
+		<div class="row1">
+			<div class="column">
+				<img src="w1.jpg" width="300" height="300" class="img1" style="border:10px solid green;margin:40px;box-shadow:5px 5px 5px black;">
+			</div class="column">
+			<div>
+				<img src="w2.jpg" width="300" height="300" class="img2" style="border:10px solid green;margin:40px;box-shadow:5px 5px 5px black;">
+			</div>
+		</div>
+		<div class="row2">
+			<div class="column1">
+				<img src="w3.jpg" width="300" height="300" class="img3" style="border:10px solid green;margin:40px;box-shadow:5px 5px 5px black;">
+			</div>
+			<div class="column1" style="left:50%;">
+				<img src="w4.jpg" width="300" height="300" class="img4" style="border:10px solid green;margin:40px;box-shadow:5px 5px 5px black;">
+			</div>
+		</div>
+	</section>
+	<section>
+		<h1 class="h1" align="center">Birthdays By Us</h1>
+			<div class="bimages">
+				<div class="row1">
+					<div>
+						<img src="b1.jpg" width="300" height="300" class="img3" style="border:10px solid green;margin:40px;box-shadow:5px 5px 5px black;">
+					</div>
+					<div>
+						<img src="b2.jpg" width="300" height="300" class="img3" style="border:10px solid green;margin:40px;box-shadow:5px 5px 5px black;">
+					</div>
+				</div>
+			</div>
+	</section>
+  </body>
+</html>
